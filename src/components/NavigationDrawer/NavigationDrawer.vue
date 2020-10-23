@@ -51,10 +51,10 @@ interface INavItem {
 
 export default class App extends Vue {
   @Prop({ type: String, required: true })
-  public readonly name;
+  public readonly name: string;
 
   @Prop({ type: String, required: true })
-  public readonly status;
+  public readonly status: string;
 
   iconPaths = {
     /* eslint-disable */
