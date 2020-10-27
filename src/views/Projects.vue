@@ -75,7 +75,7 @@ export default class Projects extends Vue {
                 },
             ],
             description:
-                'Webapp / software to manage clients and products per session. Created for internal use. (demo on request) ',
+                'All in one solution with a cash system, stock manager and analytics page. (demo on request) ',
             preview: 'client-manager.png',
             isInProd: false,
         },
