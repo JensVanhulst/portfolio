@@ -14,6 +14,11 @@
                     <project-card :project="projects[4]" />
                     <project-card :project="projects[5]" />
                 </sequential-entrance>
+                <sequential-entrance fromBottom>
+                    <project-card :project="projects[6]" />
+                    <project-card :project="projects[7]" />
+                    <project-card :project="projects[8]" />
+                </sequential-entrance>
             </v-row>
         </v-container>
     </div>
@@ -92,7 +97,7 @@ export default class Projects extends Vue {
                 },
             ],
             description:
-                'A project made during my 3th year in ICT. It is a modular webapp to visualise sensor data.',
+                'A project in progress during my 3th year in ICT. It is a modular webapp to visualise sensor data and more.',
             preview: 'datapixel.png',
             isInProd: true,
         },
@@ -148,6 +153,64 @@ export default class Projects extends Vue {
                 'A fullstack dashboard to communicate between twincat PLC`s on the industry 4.0 standard.',
             preview: 'empty.png',
             isInProd: true,
+        },
+        {
+            name: 'Game lobby',
+            technologies: ['nodejs', 'language-javascript', 'vuejs', 'vuetify'],
+            links: [
+                {
+                    icon: 'mdi-github',
+                    text: 'Source',
+                    link: 'https://github.com/JensVanhulst/Socket-programming',
+                },
+            ],
+            description:
+                'Gamlobby build with MQTT protocol. It has chat , connect4 and tic-tac-toe as functionality',
+            preview: 'gamelobby.png',
+            isInProd: false,
+        },
+        {
+            name: 'Basic dashboard',
+            technologies: [
+                'vuejs',
+                'vuetify',
+                'language-php',
+                'language-javascript',
+                'nodejs',
+                'database',
+                'language-cpp',
+            ],
+            links: [
+                {
+                    icon: 'mdi-eye',
+                    text: 'Demo',
+                    link: 'https://2-ea-iot-project.vercel.app/#/iot/',
+                },
+                {
+                    icon: 'mdi-github',
+                    text: 'Source',
+                    link: 'https://github.com/JensVanhulst/2EA-IOT-Project',
+                },
+            ],
+            description:
+                'Project made during my second year at PXL for my IOT class. (backend is not running)',
+            preview: 'iot2.png',
+            isInProd: false,
+        },
+        {
+            name: 'Website pick and place',
+            technologies: [],
+            links: [
+                {
+                    icon: 'mdi-eye',
+                    text: 'Demo',
+                    link: 'https://pickandplace-1.webnode.be/',
+                },
+            ],
+            description:
+                'Website made during my last year of college to document the pick and place that we had built.',
+            preview: 'pick-and-place.png',
+            isInProd: false,
         },
     ];
 }

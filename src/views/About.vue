@@ -66,12 +66,12 @@ import { ISkill } from '@/interfaces/ProjectCard';
 })
 export default class ProjectCard extends Vue {
     skills: ISkill[] = [
-        { icon: 'mdi-vuejs', color: 'light-green', percentage: 80 },
+        { icon: 'mdi-vuejs', color: 'light-green', percentage: 78 },
         { icon: 'mdi-react', color: 'light-blue', percentage: 40 },
-        { icon: 'mdi-nodejs', color: 'light-green darken-4', percentage: 80 },
+        { icon: 'mdi-nodejs', color: 'light-green darken-4', percentage: 70 },
         { icon: 'mdi-language-c', color: 'light-blue darken-4', percentage: 50 },
         { icon: 'mdi-language-python', color: 'primary', percentage: 30 },
-        { icon: 'mdi-language-javascript', color: 'yellow darken-2', percentage: 85 },
+        { icon: 'mdi-language-javascript', color: 'yellow darken-2', percentage: 70 },
         { icon: 'mdi-language-css3', color: 'blue', percentage: 40 },
     ];
 }
