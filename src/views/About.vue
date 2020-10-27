@@ -22,7 +22,7 @@
                         <v-btn outlined>Download CV</v-btn>
                     </v-card-text>
                     <v-card-title>
-                        Skills
+                        IT skills
                     </v-card-title>
                     <v-card-text>
                         <v-container>

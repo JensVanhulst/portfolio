@@ -58,7 +58,7 @@ export default class Projects extends Vue {
             isInProd: false,
         },
         {
-            name: 'Client managing webapp',
+            name: 'All in one solution',
             technologies: [
                 'vuejs',
                 'vuetify',
@@ -67,13 +67,7 @@ export default class Projects extends Vue {
                 'docker',
                 'database',
             ],
-            links: [
-                {
-                    icon: 'mdi-github',
-                    link: 'https://github.com/ArtAndLightHouse/client-manager',
-                    text: 'Source',
-                },
-            ],
+            links: [],
             description:
                 'All in one solution with a cash system, stock manager and analytics page. (demo on request) ',
             preview: 'client-manager.png',
