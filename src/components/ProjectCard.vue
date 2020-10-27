@@ -13,6 +13,7 @@
                 <v-chip-group column>
                     <div v-for="item in project.links" :key="item.name">
                         <v-chip
+                            @click="openLink(item.link)"
                             rounded
                             outlined
                             small
@@ -26,6 +27,7 @@
                             {{ item.text }}
                         </v-chip>
                         <v-chip
+                            @click="openLink(item.link)"
                             rounded
                             outlined
                             small
@@ -39,6 +41,17 @@
                             {{ item.text }}
                         </v-chip>
                     </div>
+
+                    <v-chip
+                        rounded
+                        outlined
+                        small
+                        color="yellow darken-4"
+                        dark
+                        v-if="project.isInProd"
+                    >
+                        in progress
+                    </v-chip>
                 </v-chip-group>
             </v-card-text>
 
@@ -69,6 +82,10 @@ import { PropType } from 'vue';
 export default class ProjectCard extends Vue {
     @Prop({ required: true, type: Object as PropType<IProject> })
     public readonly project!: string;
+
+    openLink = (link: string) => {
+        window.open(link);
+    };
 }
 </script>
 

@@ -9,7 +9,7 @@
                     Jens Vanhulst
                 </v-card-title>
                 <v-card-subtitle class="mt-2 text-center">
-                    A self taught developer and Electronics-ICT student @PXL
+                    Electronics-ICT student at PXL Digital
                 </v-card-subtitle>
             </v-col>
         </v-row>

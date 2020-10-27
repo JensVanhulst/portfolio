@@ -45,28 +45,39 @@ export default class Projects extends Vue {
         {
             name: 'Website Art & Light house',
             technologies: ['wordpress', 'language-php'],
-            links: [{ icon: 'mdi-eye', link: 'https://www.artandlighthouse.be/', text: 'Demo' }],
+            links: [
+                {
+                    icon: 'mdi-eye',
+                    link: 'https://www.artandlighthouse.be/',
+                    text: 'Demo',
+                },
+            ],
             description:
                 'Website for a local business that sells decoration and lighting in the region of Linter ',
             preview: 'artandlight.png',
+            isInProd: false,
         },
         {
             name: 'Client managing webapp',
             technologies: [
                 'vuejs',
                 'vuetify',
-                'language-typescript',
+                'language-javascript',
                 'nodejs',
                 'docker',
                 'database',
             ],
             links: [
-                { icon: 'mdi-github', link: '', text: 'Source' },
-                { icon: 'mdi-eye', link: '', text: 'Demo' },
+                {
+                    icon: 'mdi-github',
+                    link: 'https://github.com/ArtAndLightHouse/client-manager',
+                    text: 'Source',
+                },
             ],
             description:
-                'Webapp / software to manage clients and products per session. Created for internal use. ',
+                'Webapp / software to manage clients and products per session. Created for internal use. (demo on request) ',
             preview: 'client-manager.png',
+            isInProd: false,
         },
         {
             name: 'Datapixel IOT dashboard',
@@ -80,12 +91,16 @@ export default class Projects extends Vue {
                 'electron-framework',
             ],
             links: [
-                { icon: 'mdi-github', link: '', text: 'Source' },
-                { icon: 'mdi-eye', link: '', text: 'Demo' },
+                {
+                    icon: 'mdi-github',
+                    link: 'https://github.com/JensVanhulst/3EAI-PEM-2021-Data-Pixel',
+                    text: 'Source',
+                },
             ],
             description:
                 'A project made during my 3th year in ICT. It is a modular webapp to visualise sensor data.',
             preview: 'datapixel.png',
+            isInProd: true,
         },
         {
             name: 'All things talk dashboard',
@@ -98,23 +113,31 @@ export default class Projects extends Vue {
                 'database',
             ],
             links: [
-                { icon: 'mdi-github', link: '', text: 'Source' },
-                { icon: 'mdi-eye', link: '', text: 'Demo' },
+                {
+                    icon: 'mdi-eye',
+                    link: 'https://att-dashboard.vercel.app/',
+                    text: 'Demo',
+                },
             ],
             description:
                 'Webapp backed by flask to visualise and analyse all sensor data from the All things talk kit.',
             preview: 'att.png',
+            isInProd: true,
         },
         {
             name: 'Portfolio website',
             technologies: ['vuejs', 'vuetify', 'language-typescript'],
             links: [
-                { icon: 'mdi-github', link: '', text: 'Source' },
-                { icon: 'mdi-eye', link: '', text: 'Demo' },
+                {
+                    icon: 'mdi-github',
+                    link: 'https://github.com/JensVanhulst/portfolio',
+                    text: 'Source',
+                },
             ],
             description:
                 'My personal website to show my projects and skills to other people. Build with Vuejs and vuetify.',
             preview: 'portfolio.png',
+            isInProd: false,
         },
         {
             name: 'Industry 4.0 dashboard',
@@ -126,13 +149,11 @@ export default class Projects extends Vue {
                 'discord',
                 'database',
             ],
-            links: [
-                { icon: 'mdi-github', link: '', text: 'Source' },
-                { icon: 'mdi-eye', link: '', text: 'Demo' },
-            ],
+            links: [],
             description:
-                'My personal website to show my projects and skills to other people. Build with Vuejs and vuetify.',
-            preview: 'portfolio.png',
+                'A fullstack dashboard to communicate between twincat PLC`s on the industry 4.0 standard.',
+            preview: 'empty.png',
+            isInProd: true,
         },
     ];
 }

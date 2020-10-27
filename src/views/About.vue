@@ -9,12 +9,15 @@
                 <v-col cols="6">
                     <v-card-text>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iure,
-                            libero sint labore possimus illum omnis nulla. Ut quae amet libero
-                            architecto sit officia fuga veniam dolorum dignissimos molestias, cumque
-                            ad? Similique, deserunt tempora aut eligendi facere facilis! At nostrum
-                            id nulla odio harum quia repellendus consequatur quibusdam quam
-                            reiciendis.
+                            Hi there 👋. My name is Jens Vanhulst. I'm studing Electronics ICT at
+                            PXL Digitial. I'm especialy interested in fullstack web development and
+                            Internet of Things. I love to integrate hardware with a full stack IOT
+                            solution and I'm eager to learn new technologies. You can take a look at
+                            my
+                            <a color="primary" class="link" @click="$router.push('projects')"
+                                >projects</a
+                            >
+                            !
                         </p>
                         <v-btn outlined>Download CV</v-btn>
                     </v-card-text>
@@ -63,13 +66,13 @@ import { ISkill } from '@/interfaces/ProjectCard';
 })
 export default class ProjectCard extends Vue {
     skills: ISkill[] = [
-        { icon: 'mdi-vuejs', color: 'light-green', percentage: 50 },
+        { icon: 'mdi-vuejs', color: 'light-green', percentage: 80 },
         { icon: 'mdi-react', color: 'light-blue', percentage: 40 },
         { icon: 'mdi-nodejs', color: 'light-green darken-4', percentage: 80 },
-        { icon: 'mdi-language-c', color: 'light-blue darken-4', percentage: 60 },
-        { icon: 'mdi-language-python', color: 'primary', percentage: 50 },
+        { icon: 'mdi-language-c', color: 'light-blue darken-4', percentage: 50 },
+        { icon: 'mdi-language-python', color: 'primary', percentage: 30 },
         { icon: 'mdi-language-javascript', color: 'yellow darken-2', percentage: 85 },
-        { icon: 'mdi-language-css3', color: 'blue', percentage: 35 },
+        { icon: 'mdi-language-css3', color: 'blue', percentage: 40 },
     ];
 }
 </script>
@@ -83,5 +86,9 @@ export default class ProjectCard extends Vue {
     border-radius: 10px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2) !important;
     border: none !important;
+}
+
+.link {
+    text-decoration: underline;
 }
 </style>

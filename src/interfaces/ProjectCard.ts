@@ -10,6 +10,7 @@ interface IProject {
     technologies: Array<string>;
     links: Array<IProjectLinks>;
     preview: string;
+    isInProd: boolean;
 }
 
 interface ISkill {
